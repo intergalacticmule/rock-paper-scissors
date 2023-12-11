@@ -1,3 +1,3 @@
 # rock-paper-scissors
 
-Simple project showcasing basic JavaScript
+Simple rock-paper-scissors game project showcasing basic JavaScript. Output can be seen via the browser console.
