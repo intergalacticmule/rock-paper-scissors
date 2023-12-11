@@ -35,3 +35,61 @@ function getPlayerChoice() {
   );
   return playerChoice.toLowerCase();
 }
+
+function incrementScore(computerScore, playerScore) {
+  score[0] += computerScore;
+  score[1] += playerScore;
+}
+
+function announceRound(round) {
+  console.log(`Round ${round}:`);
+}
+
+function announceResult(round, winner, computerScore, playerScore) {
+  if (winner == "draw") {
+    console.log(
+      `Round ${round} result - Draw! Current score: Computer - ${computerScore}, Player - ${playerScore}`
+    );
+  } else if (winner == "player") {
+    console.log(
+      `Round ${round} result - Player wins! Current score: Computer - ${computerScore}, Player - ${playerScore}`
+    );
+  } else if (winner == "computer") {
+    console.log(
+      `Round ${round} result - Player wins! Current score: Computer - ${computerScore}, Player - ${playerScore}`
+    );
+  }
+}
+
+function playRound(computerChoice, playerChoice, round) {
+  if (computerChoice == playerChoice) {
+    incrementScore(1, 1);
+    announceResult(round, "draw", score[0], score[1]);
+  } else {
+    if (computerChoice == choices[0]) {
+      if (playerChoice == choices[1]) {
+        incrementScore(0, 1);
+        announceResult(round, "player", score[0], score[1]);
+      } else if (playerChoice == choices[2]) {
+        incrementScore(1, 0);
+        announceResult(round, "computer", score[0], score[1]);
+      }
+    } else if (computerChoice == choices[1]) {
+      if (playerChoice == choices[0]) {
+        incrementScore(1, 0);
+        announceResult(round, "computer", score[0], score[1]);
+      } else if (playerChoice == choices[2]) {
+        incrementScore(0, 1);
+        announceResult(round, "player", score[0], score[1]);
+      }
+    } else if (computerChoice == choices[2]) {
+      if (playerChoice == choices[0]) {
+        incrementScore(0, 1);
+        announceResult(round, "player", score[0], score[1]);
+      } else if (playerChoice == choices[1]) {
+        incrementScore(1, 0);
+        announceResult(round, "computer", score[0], score[1]);
+      }
+    }
+  }
+}
