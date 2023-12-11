@@ -93,3 +93,37 @@ function playRound(computerChoice, playerChoice, round) {
     }
   }
 }
+
+function announceWinner(computerScore, playerScore) {
+  console.log("Calculating final score...");
+  if (computerScore > playerScore) {
+    console.log(
+      `Computer wins! Final score: Computer - ${computerScore}, Player - ${playerScore}`
+    );
+  } else if (computerScore < playerScore) {
+    console.log(
+      `Player wins! Final score: Computer - ${computerScore}, Player - ${playerScore}`
+    );
+  } else {
+    console.log(
+      `Draw! Final score: Computer - ${computerScore}, Player - ${playerScore}`
+    );
+  }
+}
+
+function game() {
+  let i = 0;
+  while (true) {
+    i++;
+    if (score[0] == 5 || score[1] == 5) {
+      break;
+    } else {
+      console.log(score[0], score[1]);
+      announceRound(i);
+      playRound(getComupterChoice(), getPlayerChoice(), i);
+    }
+    announceWinner(score[0], score[1]);
+  }
+}
+
+game();
