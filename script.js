@@ -1,16 +1,18 @@
 const choices = ["rock", "paper", "scissors"];
+score = [0, 0];
 
+function announceChoice(party, choice) {
+  console.log(
+    `${party} choice: ${choice.charAt(0).toUpperCase() + choice.slice(1)}`
+  );
+}
 function getComupterChoice() {
   let computerChoice = choices[Math.floor(Math.random() * choices.length)];
-  console.log(
-    `Computer choice: ${
-      computerChoice.charAt(0).toUpperCase() + computerChoice.slice(1)
-    }`
-  );
+  announceChoice("Computer", computerChoice);
   return computerChoice;
 }
 
-function checkPlayerChoiceValidity(choice) {
+function validatePlayerChoice(choice) {
   if (choices.includes(String(choice.toLowerCase()))) {
     return true;
   }
@@ -20,19 +22,13 @@ function checkPlayerChoiceValidity(choice) {
 function getPlayerChoice() {
   let playerChoice;
   while (
-    !checkPlayerChoiceValidity(
-      (playerChoice = prompt("Please enter your choice."))
-    )
+    !validatePlayerChoice((playerChoice = prompt("Please enter your choice.")))
   ) {
     alert(
       'Your choice can only be "Rock", "Paper", or "Scissors". Letter case does not matter.'
     );
   }
-  console.log(
-    `Player choice: ${
-      playerChoice.charAt(0).toUpperCase() + playerChoice.slice(1)
-    }`
-  );
+  announceChoice("Player", playerChoice);
   return playerChoice.toLowerCase();
 }
 
@@ -118,12 +114,11 @@ function game() {
     if (score[0] == 5 || score[1] == 5) {
       break;
     } else {
-      console.log(score[0], score[1]);
       announceRound(i);
       playRound(getComupterChoice(), getPlayerChoice(), i);
     }
-    announceWinner(score[0], score[1]);
   }
+  announceWinner(score[0], score[1]);
 }
 
 game();
