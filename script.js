@@ -1,5 +1,5 @@
 const choices = ["rock", "paper", "scissors"];
-score = [0, 0];
+let score = [0, 0];
 
 function announceChoice(party, choice) {
   console.log(
