@@ -96,3 +96,8 @@ button:hover {
 	height: 179px;
 	width: 179px;
 }
+
+#result,
+#sub-result {
+	height: 20px;
+}
