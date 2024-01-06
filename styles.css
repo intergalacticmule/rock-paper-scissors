@@ -79,9 +79,15 @@ button:hover {
 	opacity: 0.5;
 }
 
+#player-container,
+#computer-container {
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+}
+
 #player-container > p,
 #computer-container > p {
-	height: 23px;
 	width: 179px;
 }
 
