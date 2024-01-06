@@ -1,0 +1,92 @@
+* {
+	font-family: "Press Start 2P";
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+#container {
+	display: flex;
+	flex-direction: column;
+}
+
+header {
+	display: flex;
+	background-color: #8d723eda;
+	justify-content: center;
+	align-items: center;
+	height: 10vh;
+}
+
+#content {
+	background-color: #eebd62;
+	height: 90vh;
+}
+
+#container-top,
+#container-bottom {
+	display: flex;
+	flex-direction: column;
+}
+
+#container-top {
+	padding-top: 50px;
+	gap: 20px;
+}
+
+#container-choices-winner {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	margin-top: 50px;
+}
+
+#container-bottom {
+	margin-top: 100px;
+	align-items: center;
+}
+
+#round-counter {
+	font-weight: bold;
+}
+
+#winner {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 200px;
+}
+
+#container-choices-winner,
+#result,
+#sub-result {
+	font-size: 20px;
+}
+
+#round-counter,
+#container-top {
+	text-align: center;
+}
+
+button {
+	background: none;
+	border: none;
+	cursor: pointer;
+	border-radius: 50%;
+}
+
+button:hover {
+	opacity: 0.5;
+}
+
+#player-container > p,
+#computer-container > p {
+	height: 23px;
+	width: 179px;
+}
+
+#img-container-left,
+#img-container-right {
+	height: 179px;
+	width: 179px;
+}
