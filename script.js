@@ -83,11 +83,9 @@ function disableButton(button) {
 }
 
 function showRestartButton(parent) {
-	const btn = document.createElement("button");
-	btn.textContent = "RESTART";
-	btn.style.fontSize = "40px";
-	btn.style.border = "none";
-	parent.appendChild(btn);
+	const restartButton = document.createElement("button");
+	restartButton.classList.add("cursor-pointer");
+	parent.appendChild(restartButton);
 }
 
 function enableButton(button) {
