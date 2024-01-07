@@ -34,25 +34,22 @@ function determineRoundWinner(playerChoice, computerChoice) {
 		(playerChoice === "paper" && computerChoice === "rock")
 	) {
 		playerScoreCounter += 1;
-		return "player";
+		return "Player";
 	} else if (
 		(computerChoice === "rock" && playerChoice === "scissors") ||
 		(computerChoice === "scissors" && playerChoice === "paper") ||
 		(computerChoice === "paper" && playerChoice === "rock")
 	) {
 		computerScoreCounter += 1;
-		return "computer";
+		return "Computer";
 	} else {
-		return "draw";
+		return "tie";
 	}
 }
 
 function announceRoundWinner(winner) {
-	if (winner === "player") {
-		result.textContent = "You win this round! You gain one point.";
-	} else if (winner === "computer") {
-		result.textContent =
-			"Computer wins this round! Computer gainst one point.";
+	if (winner !== "tie") {
+		result.textContent = `${winner} wins this round! They gain one point.`;
 	} else {
 		result.textContent = "Tie! No points were gained.";
 	}
