@@ -24,6 +24,7 @@
 header {
 	background-color: #b87b0cda;
 	height: 10vh;
+	border-bottom: 5px solid black;
 }
 
 #content {
