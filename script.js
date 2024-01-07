@@ -85,6 +85,7 @@ function disableButton(button) {
 function showRestartButton(parent) {
 	const restartButton = document.createElement("button");
 	restartButton.classList.add("cursor-pointer");
+	restartButton.textContent = "RESTART";
 	parent.appendChild(restartButton);
 }
 
