@@ -75,7 +75,8 @@ button {
 	border-radius: 50%;
 }
 
-button:hover {
+.opaque-hover:hover,
+.opaque {
 	opacity: 0.5;
 }
 
