@@ -29,21 +29,21 @@ header {
 #content {
 	background-color: #eebd62;
 	height: 86vh;
+	padding-top: 80px;
 }
 
 #container-top {
-	padding-top: 100px;
 	gap: 20px;
+}
+
+#container-bottom {
+	padding-top: 80px;
 }
 
 #container-choices-winner {
 	flex-direction: row;
 	justify-content: space-evenly;
 	margin-top: 50px;
-}
-
-#container-bottom {
-	margin-top: 100px;
 }
 
 #round-counter {
