@@ -75,11 +75,6 @@ button {
 	border-radius: 50%;
 }
 
-.opaque-hover:hover,
-.opaque {
-	opacity: 0.5;
-}
-
 #player-container,
 #computer-container {
 	display: flex;
@@ -108,4 +103,17 @@ button {
 	width: 179px;
 	align-items: center;
 	justify-content: center;
+}
+
+.cursor-pointer {
+	cursor: pointer;
+}
+
+.cursor-auto {
+	cursor: auto;
+}
+
+.opaque-hover:hover,
+.opaque {
+	opacity: 0.5;
 }
