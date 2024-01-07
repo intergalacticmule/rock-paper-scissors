@@ -15,23 +15,26 @@
 			<title>Rock-Paper-Scissors</title>
 		</head>
 		<body>
-			<div id="container">
-				<header>
+			<div id="container" class="flex column">
+				<header class="flex justify-center align-center">
 					<h1>ROCK PAPER SCISSORS</h1>
 				</header>
 				<div id="content">
-					<div id="container-top">
+					<div id="container-top" class="flex column">
 						<p id="result">Choose your weapon</p>
 						<p id="sub-result">
 							First one to earn 5 points wins the game
 						</p>
-						<div id="container-choices-winner">
+						<div id="container-choices-winner" class="flex">
 							<div id="player-container">
 								<div id="img-container-left"></div>
 								<p>Player score:</p>
 								<p id="player-score">0</p>
 							</div>
-							<div id="restart"></div>
+							<div
+								id="restart"
+								class="flex justify-center align-center"
+							></div>
 							<div id="computer-container">
 								<div id="img-container-right"></div>
 								<p>Computer score:</p>
@@ -39,7 +42,7 @@
 							</div>
 						</div>
 					</div>
-					<div id="container-bottom">
+					<div id="container-bottom" class="flex column align-center">
 						<div id="buttons-container">
 							<button
 								id="rock"
