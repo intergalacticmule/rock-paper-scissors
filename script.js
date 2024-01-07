@@ -78,9 +78,8 @@ function updateFinalResult(playerScore, computerScore) {
 
 function disableButton(button) {
 	button.disabled = true;
-	button.classList.remove("opaque-hover");
-	button.classList.add("opaque");
-	button.style.cursor = "auto";
+	button.classList.remove("opaque-hover", "cursor-pointer");
+	button.classList.add("opaque", "cursor-auto");
 }
 
 function showRestartButton(parent) {
@@ -93,9 +92,8 @@ function showRestartButton(parent) {
 
 function enableButton(button) {
 	button.disabled = false;
-	button.classList.remove("opaque");
-	button.classList.add("opaque-hover");
-	button.style.cursor = "pointer";
+	button.classList.remove("opaque", "cursor-auto");
+	button.classList.add("opaque-hover", "cursor-pointer");
 }
 
 function restartGame(choiceButtons, restartButton) {
