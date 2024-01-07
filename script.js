@@ -49,7 +49,7 @@ function determineRoundWinner(playerChoice, computerChoice) {
 
 function announceRoundWinner(winner) {
 	if (winner !== "tie") {
-		result.textContent = `${winner} wins this round! They gain one point.`;
+		result.textContent = `${winner} wins this round! They gain 1 point.`;
 	} else {
 		result.textContent = "Tie! No points were gained.";
 	}
