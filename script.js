@@ -19,11 +19,11 @@ function getComupterChoice() {
 function setImage(parent, image) {
 	if (parent.childNodes.length === 0) {
 		const img = document.createElement("img");
-		img.src = `images/${image}.svg`;
+		img.src = `images/${image}.png`;
 		parent.appendChild(img);
 	} else {
 		const img = parent.firstChild;
-		img.src = `images/${image}.svg`;
+		img.src = `images/${image}.png`;
 	}
 }
 
