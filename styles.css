@@ -101,3 +101,9 @@ button:hover {
 #sub-result {
 	height: 20px;
 }
+
+#restart {
+	display: flex;
+	width: 179px;
+	align-items: center;
+}
