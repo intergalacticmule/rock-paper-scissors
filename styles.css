@@ -28,7 +28,7 @@ header {
 
 #content {
 	background-color: #eebd62;
-	height: 90vh;
+	height: 86vh;
 }
 
 #container-top {
@@ -108,4 +108,16 @@ button {
 .opaque-hover:hover,
 .opaque {
 	opacity: 0.5;
+}
+
+footer {
+	height: 4vh;
+	background-color: black;
+	color: white;
+	gap: 10px;
+}
+
+a > img {
+	height: 2.5vh;
+	width: 2.5vh;
 }
