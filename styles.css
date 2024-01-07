@@ -88,6 +88,10 @@ button {
 	height: 20px;
 }
 
+#buttons-container {
+	gap: 50px;
+}
+
 #restart {
 	width: 179px;
 }
