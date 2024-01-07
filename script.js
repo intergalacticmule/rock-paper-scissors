@@ -78,7 +78,8 @@ function updateFinalResult(playerScore, computerScore) {
 
 function disableButton(button) {
 	button.disabled = true;
-	button.style.opacity = "0.5";
+	button.classList.remove("opaque-hover");
+	button.classList.add("opaque");
 	button.style.cursor = "auto";
 }
 
@@ -92,7 +93,8 @@ function showRestartButton(parent) {
 
 function enableButton(button) {
 	button.disabled = false;
-	button.style.opacity = "1";
+	button.classList.remove("opaque");
+	button.classList.add("opaque-hover");
 	button.style.cursor = "pointer";
 }
 
