@@ -106,4 +106,5 @@ button:hover {
 	display: flex;
 	width: 179px;
 	align-items: center;
+	justify-content: center;
 }
