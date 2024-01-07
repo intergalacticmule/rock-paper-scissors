@@ -101,7 +101,7 @@ function restartGame(choiceButtons, restartButton) {
 	playerScore.textContent = playerScoreCounter;
 	computerScoreCounter = 0;
 	computerScore.textContent = computerScoreCounter;
-	result.textContent = "Pick your weapon";
+	result.textContent = "Pick your weapon.";
 	subResult.textContent = "First one to earn 5 points wins the game.";
 }
 
